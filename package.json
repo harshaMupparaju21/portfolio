@@ -8,7 +8,6 @@
     "predeploy": "npm run build --legacy-peer-deps",
     "deploy": "gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject",
-    "preinstall": "npm install --legacy-peer-deps",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },
