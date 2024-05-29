@@ -8,18 +8,21 @@ import "../experience/Experience.css";
 import { Fade } from "react-reveal";
 import ExperienceImg from "../experience/ExperienceImg";
 import Educations from "../../containers/education/Educations";
-import Certifications from "../../containers/certifications/Certifications";
-import EducationImg from "../education/EducationImg";
 import "../education/EducationComponent.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import BlogsImg from "../contact/BlogsImg";
 import "../contact/ContactComponent.css";
-import { greeting, contactPageData,  projectsHeader, projects, experience } from "../../portfolio.js";
+import {
+  greeting,
+  contactPageData,
+  projectsHeader,
+  projects,
+  experience,
+  socialMediaLinks,
+} from "../../portfolio.js";
 import { style } from "glamor";
 import ProjectsImg from "../projects/ProjectsImg";
-import { } from "../../portfolio.js";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import "../projects/Projects.css" 
+import "../projects/Projects.css";
 
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
@@ -38,10 +41,9 @@ function Home(props) {
       <Header theme={props.theme} setTheme={props.setTheme} />
       <Greeting theme={props.theme} />
       <Skills theme={props.theme} />
-      <div className="basic-experience" id = "experience">
+      <div className="basic-experience" id="experience">
         <Fade bottom duration={2000} distance="40px">
           <div className="experience-heading-div">
-           
             <div className="experience-heading-text-div">
               <h1
                 className="experience-heading-text"
@@ -66,15 +68,14 @@ function Home(props) {
         </Fade>
       </div>
       <div className="experience-info">
-      <div className="experience-heading-img-div">
-              <ExperienceImg theme={theme} />
-            </div>
-      <ExperienceAccordion sections={experience["sections"]} theme={theme} />
+        <div className="experience-heading-img-div">
+          <ExperienceImg theme={theme} />
+        </div>
+        <ExperienceAccordion sections={experience["sections"]} theme={theme} />
       </div>
       <div className="basic-education" id="education">
         <Fade bottom duration={2000} distance="40px">
           <div className="heading-div">
-           
             <div className="heading-text-div">
               <h1 className="heading-text" style={{ color: theme.text }}>
                 Education
@@ -118,24 +119,24 @@ function Home(props) {
           </div>
         </Fade>
         <div className="repo-cards-div-main">
-        {projects.data.map((repo) => {
-          return <ProjectCard repo={repo} theme={theme} />;
-        })}
+          {projects.data.map((repo) => {
+            return <ProjectCard repo={repo} theme={theme} />;
+          })}
+        </div>
+        <br />
+        <br />
+        <br />
+        <div className="more-projects">
+          {" "}
+          <a {...styles} className="general-btn" href={socialMediaLinks.github}>
+            More Projects (Github)
+          </a>
+        </div>
+
+        <br />
+        <br />
       </div>
-      <br />
-      <br />
-      <br />
-      <a
-        {...styles}
-        className="general-btn"
-        href="https://github.com/harikanani"
-      >
-        More Projects (Github)
-      </a>
-      <br />
-      <br />
-      </div>
-      <div className="basic-contact">
+      <div className="basic-contact" id="contact">
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-heading-div">
             <div className="contact-heading-img-div">
@@ -144,7 +145,7 @@ function Home(props) {
                 src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
                 alt=""
                 style={{
-                  border: "none"
+                  border: "none",
                 }}
               />
             </div>
@@ -170,31 +171,8 @@ function Home(props) {
             </div>
           </div>
         </Fade>
-        {/* <Fade bottom duration={1000} distance="40px">
-          <div className="blog-heading-div">
-            <div className="blog-heading-text-div">
-              <h1 className="blog-heading-text" style={{ color: theme.text }}>
-                {blogSection["title"]}
-              </h1>
-              <p
-                className="blog-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {blogSection["subtitle"]}
-              </p>
-              <div className="blogsite-btn-div">
-                <a {...styles} className="general-btn" href={blogSection.link}>
-                  My Twitter Profile
-                </a>
-              </div>
-            </div>
-            <div className="blog-heading-img-div">
-              <BlogsImg theme={theme} />
-            </div>
-          </div>
-        </Fade> */}
       </div>
-      {/* <Footer theme={props.theme} /> */}
+      <Footer theme={props.theme} />
     </div>
   );
 }

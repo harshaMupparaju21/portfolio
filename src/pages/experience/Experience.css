@@ -55,12 +55,12 @@
   font-family: "Google Sans Medium";
 }
 
-.experience-info{
+.experience-info {
   display: flex;
 }
 
-.experience-info .experience-accord{
-  flex: 1
+.experience-info .experience-accord {
+  flex: 1;
 }
 
 @media (max-width: 1380px) {
@@ -70,6 +70,9 @@
   }
   .experience-heading-sub-text {
     font-size: 25px;
+  }
+  .experience-info {
+    display: block;
   }
 }
 
@@ -93,7 +96,7 @@
     line-height: normal;
     text-align: center;
   }
-  .experience-info{
+  /* .experience-info{
     display: block;
-  }
+  } */
 }

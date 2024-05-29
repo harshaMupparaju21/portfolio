@@ -2,8 +2,8 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, 
-  splashDuration: 2000,// Change this to true if you want to use the splash screen.
+  isSplash: true,
+  splashDuration: 2000, // Change this to true if you want to use the splash screen.
   useCustomCursor: false, // Change this to true if you want the good'ol cursor
 };
 
@@ -12,12 +12,11 @@ const greeting = {
   title: "Hello 👋.",
   title2: "Harsha",
   logo_name: "Harsha M.",
-  nickname: "harry / picleric",
+  // nickname: "harsha",
   full_name: "Harsha Mupparaju",
   subTitle: "Full stack developer, Java and Javascript enthusiast",
-  resumeLink:
-    "https://harsha-resume-ftm.tiiny.site/",
-  mail: "mailto:hkanani191@gmail.com",
+  resumeLink: "https://harsha-resume-ftm.tiiny.site/",
+  mail: "mailto:hmuppara@asu.edu",
 };
 
 const socialMediaLinks = {
@@ -34,10 +33,8 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         // "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-    
       ],
       softwareSkills: [
-        
         {
           skillName: "Python",
           fontAwesomeClassname: "simple-icons:python",
@@ -52,7 +49,7 @@ const skills = {
             color: "#f89820",
           },
         },
-        
+
         {
           skillName: "HTML5",
           fontAwesomeClassname: "simple-icons:html5",
@@ -96,7 +93,7 @@ const skills = {
             color: "#339933",
           },
         },
-       
+
         {
           skillName: "JQuery",
           fontAwesomeClassname: "simple-icons:jquery",
@@ -125,7 +122,7 @@ const skills = {
             color: "#f89820",
           },
         },
-       {
+        {
           skillName: "Spring Boot",
           fontAwesomeClassname: "simple-icons:springboot",
           style: {
@@ -160,8 +157,7 @@ const skills = {
             color: "#207297",
           },
         },
-        
-      
+
         {
           skillName: "Hibernate",
           fontAwesomeClassname: "simple-icons:hibernate",
@@ -227,7 +223,7 @@ const skills = {
             color: "#E94E32",
           },
         },
-       
+
         {
           skillName: "PostgreSQL",
           fontAwesomeClassname: "simple-icons:postgresql",
@@ -281,7 +277,7 @@ const degrees = {
       logo_path: "nitww.png",
       alt_name: "NTIW",
       duration: "Aug 2015 - May 2019",
-      descriptions: []
+      descriptions: [],
       //   "⚡ I have secured 9.82 CGPA.",
       // ],
     },
@@ -294,12 +290,11 @@ const certifications = {
       title: "sample title",
       subtitle: "sample subtitle",
       logo_path: "mongo.png",
-      certificate_link:
-        "https://google.com",
+      certificate_link: "https://google.com",
       alt_name: "MongoDB University",
       color_code: "#47A048",
     },
-  
+
     // color_code: "#8C151599",
     // color_code: "#7A7A7A",
     // color_code: "#0C9D5899",
@@ -311,7 +306,6 @@ const certifications = {
     // color_code: "#b190b0",
   ],
 };
-
 
 // Experience Page
 const experience = {
@@ -333,12 +327,11 @@ const experience = {
           location: "Bangalore, India",
           description: [
             `Crafted React UI pages that optimized Use Case creation for product owners, slashing the duration from 15 minutes with Postman to just 5 minutes`,
-            'Enhanced real-time insight processing by 70% and cut DynamoDB costs by implementing caching with Redis.',
+            "Enhanced real-time insight processing by 70% and cut DynamoDB costs by implementing caching with Redis.",
             "Employed AWS Lambda and S3 for batch insight processing, targeting lower-priority insights by publishing them to a Kafka topic and for tracking the insight journey post saving in AWS Dynamo DB",
-          "Developed retry functionality in Java for Error topics to ensure recovery of insights from Kafka, avoiding data loss.Developed retry functionality in Java for Error topics to ensure recovery of insights from Kafka, avoiding data loss.",
-        "Leveraged SonarQube to boost code coverage and quality. Utilized Cucumber for crafting acceptance test cases.",
-        
-      ],
+            "Developed retry functionality in Java for Error topics to ensure recovery of insights from Kafka, avoiding data loss.Developed retry functionality in Java for Error topics to ensure recovery of insights from Kafka, avoiding data loss.",
+            "Leveraged SonarQube to boost code coverage and quality. Utilized Cucumber for crafting acceptance test cases.",
+          ],
           color: "#0071C5",
         },
         {
@@ -355,8 +348,7 @@ const experience = {
             'Introduced "Good Guy" feature to specifically address and minimize false positive transactions efficiently',
             "Implemented L1 and L2 message workflows with reusable scripts, reducing creation time from 15 minutes to one",
             "Successfully resolved over 200 client-reported issues, leading to a 20% reduction in client complaints",
-        
-      ],
+          ],
           color: "#0071C5",
         },
       ],
@@ -371,11 +363,11 @@ const experience = {
           logo_path: "seal.png",
           duration: "May 2023 - May 2024",
           location: "Tempe, AZ",
-          description:
-            ["Designing and evaluating assignments, mentoring undergraduate students in courses SER 232 - Computer System Fundamentals, SER 402 - Computing Capstone Project II and CSE 310 - Data Structures and Algorithms."],
+          description: [
+            "Designing and evaluating assignments, mentoring undergraduate students in courses SER 232 - Computer System Fundamentals, SER 402 - Computing Capstone Project II and CSE 310 - Data Structures and Algorithms.",
+          ],
           color: "#FBBD18",
         },
-       
       ],
     },
   ],
@@ -397,23 +389,14 @@ const contactPageData = {
     description:
       "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
   },
-  blogSection: {
-    title: "Blogs",
-    subtitle:
-      "I don't blog frequently but when I do something awesome, I do try to document it so it can be helpful to others. I write on Twitter.",
-    link: "https://twitter.com/Harikrushn9",
-    avatar_image_path: "blogs_image.svg",
-  },
 };
-
-
 
 const projects = {
   data: [
     {
       id: "0",
       name: "Smart Driving Assistant",
-      url: "link",// add link
+      url: "link", // add link
       description:
         "A mobile application that enhances road safety by leveraging smartphone sensors to monitor driver behaviors in real-time, offering speed alerts, crash detection, and gamified rewards for safe driving.  ",
       languages: [
@@ -443,28 +426,28 @@ const projects = {
         },
       ],
       links: [
-        {
-          name: "Github",
-          url: "https://github.com/harikanani/Keep-Calm-and-Carry-On.github.io",
-          iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Devpost",
-          url: "https://devpost.com/software/keep-calm-and-carry-on",
-          iconifyClass: "fluent:window-dev-edit-20-filled",
-        },
-        {
-          name: "Live Demo",
-          url:
-            "https://akshitagupta15june.github.io/Keep-Calm-and-Carry-On.github.io/",
-          iconifyClass: "mdi:web",
-        },
+        // {
+        //   name: "Github",
+        //   url: "https://github.com/",
+        //   iconifyClass: "ri:github-fill",
+        // },
+        // {
+        //   name: "Devpost",
+        //   url: "https://devpost.com/software",
+        //   iconifyClass: "fluent:window-dev-edit-20-filled",
+        // },
+        // {
+        //   name: "Live Demo",
+        //   url:
+        //     "",
+        //   iconifyClass: "mdi:web",
+        // },
       ],
     },
     {
       id: "1",
       name: "Hybrid Cloud Smart Classroom Assistant",
-      // url: "https://github.com/kevalvavaliya/Yog4Life",
+      // url: "https://github.com/",
       description:
         "A cloud-based smart classroom assistant for efficient video processing and face recognition from classroom footage using AWS Lambda and tested the system to successfully processes 100 requests in a minute.",
       languages: [
@@ -494,86 +477,48 @@ const projects = {
         },
       ],
       links: [
-        {
-          name: "Github",
-          url: "https://github.com/kevalvavaliya/Yog4Life",
-          iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Devfolio",
-          url: "https://devfolio.co/projects/yoglife-b20d",
-          iconifyClass: "fluent:window-dev-edit-20-filled",
-        },
+        // {
+        //   name: "Github",
+        //   url: "https://github.com/",
+        //   iconifyClass: "ri:github-fill",
+        // },
+        // {
+        //   name: "Devfolio",
+        //   url: "",
+        //   iconifyClass: "fluent:window-dev-edit-20-filled",
+        // },
       ],
     },
     {
       id: "2",
-      name: "Implementation of Generalized Frequency Division Multiplexing in Cognitive Radio",
+      name:
+        "Implementation of Generalized Frequency Division Multiplexing in Cognitive Radio",
       url: "https://github.com/kevalvavaliya/Adoptisity",
       description:
-        "Our mission is to spread awareness about the benefits of adoption and to support LGBT families so that everyone has the chance to have a loving home environment.",
+        "Designed and implemented a GFDM-based transmitter-receiver system using MATLAB and generated characteristic ROC curves to model the system performance in different channels and in cognitive radio environment.",
       languages: [
-        {
-          name: "HTML5",
-          iconifyClass: "logos-html-5",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "logos-css-3",
-        },
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
-        },
-        {
-          name: "Wix",
-          iconifyClass: "bxl:wix",
-        },
+        // {
+        //   name: "HTML5",
+        //   iconifyClass: "logos-html-5",
+        // },
+        // {
+        //   name: "CSS3",
+        //   iconifyClass: "logos-css-3",
+        // },
+        // {
+        //   name: "JavaScript",
+        //   iconifyClass: "logos-javascript",
+        // },
+        // {
+        //   name: "Wix",
+        //   iconifyClass: "bxl:wix",
+        // },
       ],
       links: [
-        {
-          name: "Github",
-          url: "https://github.com/harikanani/Adoptisity",
-          iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Devpost",
-          url: "https://devpost.com/software/adoptisity",
-          iconifyClass: "fluent:window-dev-edit-20-filled",
-        },
         {
           name: "Live Demo",
-          url: "https://rajmahadevwala1.wixsite.com/adoptisity",
+          url: " https://ieeexplore.ieee.org/document/8933175 ",
           iconifyClass: "mdi:web",
-        },
-      ],
-    },
-    {
-      id: "3",
-      name: "FinSplit",
-      url: "https://github.com/rajmahadev8/Fin-Split",
-      description:
-        "Split your bills with your friends without any hassle. Manage Group Expenses, Track your expenses, and much more.",
-      languages: [
-        {
-          name: "ReactJS",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "NodeJs",
-          iconifyClass: "logos-nodejs",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/rajmahadev8/Fin-Split",
-          iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Devpost",
-          url: "https://devpost.com/software/finsplit",
-          iconifyClass: "fluent:window-dev-edit-20-filled",
         },
       ],
     },
