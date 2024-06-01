@@ -139,7 +139,7 @@ function Home(props) {
       <div className="basic-contact" id="contact">
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-heading-div">
-            <div className="contact-heading-img-div">
+            {/* <div className="contact-heading-img-div">
               <img
                 className="profile-pic"
                 src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
@@ -148,7 +148,7 @@ function Home(props) {
                   border: "none",
                 }}
               />
-            </div>
+            </div> */}
             <div className="contact-heading-text-div">
               <h1
                 className="contact-heading-text"

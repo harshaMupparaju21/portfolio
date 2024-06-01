@@ -23,10 +23,15 @@
   margin-bottom: 30px;
 }
 
+.greeting-text-div {
+  display: flex;
+  justify-content: center;
+}
+/* 
 .greeting-image-div svg,
 .skills-image-div svg{
   width: 75%;
-}
+} */
 
 .button-greeting-div {
   display: flex;

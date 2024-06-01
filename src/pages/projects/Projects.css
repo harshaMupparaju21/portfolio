@@ -49,9 +49,7 @@
 .projects-header-detail-text {
   font-size: 20px;
   line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 10%;
   font-family: "Google Sans Medium";
 }
 
@@ -59,8 +57,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
   gap: 1rem 1rem;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 60px;
 }
 .more-projects {
@@ -92,16 +90,11 @@
 
   .projects-header-detail-text {
     font-size: 16px;
-    margin-right: 0px;
-    margin-left: 0px;
     line-height: normal;
     text-align: center;
   }
 
   .repo-cards-div-main {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
   }
 }

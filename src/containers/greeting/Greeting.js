@@ -6,6 +6,9 @@ import { Fade } from "react-reveal";
 import { useHistory } from "react-router-dom";
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
+import { contactPageData } from "../../portfolio";
+
+const ContactData = contactPageData.contactSection;
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -33,7 +36,7 @@ export default function Greeting(props) {
                 <span style={{ color: theme.accentColor }}>
                   {greeting.full_name}.{" "}
                 </span>
-                {greeting.subTitle}
+                <p>{greeting.subTitle}</p>
               </p>
               <SocialMedia />
               <div className="portfolio-repo-btn-div">
@@ -46,7 +49,17 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            <FeelingProud theme={theme} />
+            {/* <FeelingProud theme={theme} /> */}
+            <div className="contact-heading-img-div">
+              <img
+                className="profile-pic"
+                src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
+                alt=""
+                style={{
+                  border: "none",
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>

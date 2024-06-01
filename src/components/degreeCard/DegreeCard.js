@@ -32,7 +32,7 @@ function DegreeCard(props) {
     borderLeft: `1px solid ${theme.accentColor}`,
     borderRight: `1px solid ${theme.accentColor}`,
     borderRadius: "7px",
-    width: "90%",
+    width: "80vw",
     margin: "10px",
     boxShadow: `0px 1px 5px ${theme.accentColor}`,
     transition: "all 0.2s ease-in-out",
@@ -40,32 +40,32 @@ function DegreeCard(props) {
       color: "rgba(255, 255, 255, 1)",
       boxShadow: `0 5px 15px ${theme.accentColor}`,
     },
-    "@media (max-width: 768px)": {
-      width: "100%",
-    },
+    // "@media (max-width: 768px)": {
+    //   width: "100%",
+    // },
   });
 
-  const button_visit = style({
-    textDecoration: "none",
-    color: "rgba(255, 255, 255, 1)",
-    background: `${theme.accentColor}`,
-    padding: "15px 15px",
-    marginTop: "25px",
-    borderRadius: "4px",
-    borderWidth: "0px",
-    marginBottom: "20px",
-    width: "200px",
-    height: "50px",
-    fontWeight: "bold",
-    fontFamily: "Google Sans Regular",
-    fontSize: "17px",
-    transition: "all 0.2s ease-in-out",
-    cursor: "pointer",
-    ":hover": {
-      color: "rgba(255, 255, 255, 1)",
-      boxShadow: `0 5px 10px ${theme.accentColor}`,
-    },
-  });
+  // const button_visit = style({
+  //   textDecoration: "none",
+  //   color: "rgba(255, 255, 255, 1)",
+  //   background: `${theme.accentColor}`,
+  //   padding: "15px 15px",
+  //   marginTop: "25px",
+  //   borderRadius: "4px",
+  //   borderWidth: "0px",
+  //   marginBottom: "20px",
+  //   width: "200px",
+  //   height: "50px",
+  //   fontWeight: "bold",
+  //   fontFamily: "Google Sans Regular",
+  //   fontSize: "17px",
+  //   transition: "all 0.2s ease-in-out",
+  //   cursor: "pointer",
+  //   ":hover": {
+  //     color: "rgba(255, 255, 255, 1)",
+  //     boxShadow: `0 5px 10px ${theme.accentColor}`,
+  //   },
+  // });
 
   return (
     <div className="degree-card">

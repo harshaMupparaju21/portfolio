@@ -11,7 +11,7 @@ const settings = {
 const greeting = {
   title: "Hello 👋.",
   title2: "Harsha",
-  logo_name: "Harsha M.",
+  logo_name: " Harsha Vardhan Mupparaju",
   // nickname: "harsha",
   full_name: "Harsha Mupparaju",
   subTitle: "Full stack developer, Java and Javascript enthusiast",
@@ -165,13 +165,13 @@ const skills = {
             color: "#E94E32",
           },
         },
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "simple-icons:python",
-          style: {
-            color: "#3776AB",
-          },
-        },
+        // {
+        //   skillName: "Python",
+        //   fontAwesomeClassname: "simple-icons:python",
+        //   style: {
+        //     color: "#3776AB",
+        //   },
+        // },
       ],
     },
     {
@@ -195,13 +195,7 @@ const skills = {
             color: "#38AFBB",
           },
         },
-        {
-          skillName: "Heroku",
-          fontAwesomeClassname: "simple-icons:heroku",
-          style: {
-            color: "#6863A6",
-          },
-        },
+
         {
           skillName: "Redis",
           fontAwesomeClassname: "simple-icons:redis",
@@ -266,7 +260,16 @@ const degrees = {
       alt_name: "Arizona State University, Tempe, AZ",
       duration: "Aug 2022 - May 2024",
       descriptions: [
-        " Cloud Computing, Mobile Systems, Data Structures & Algorithms, Software Engineering Foundations",
+        " CSE 546: Clous Computing",
+        "SER 501: Advanced Data Structures and Algorithms",
+        "SER 515: Foundations of Software Engineering",
+        "SER 531: Semantic Web Engineering",
+        "CSE 566: Software Project, Process and Quality Management",
+        "SER 423: Mobile Systems",
+        "SER 502: Languages and Programming Paradigms",
+        "CSE 565: Software Verification, Validation and Testing",
+        "SER 594: Game Programming and Design",
+        // " Cloud Computing, Mobile Systems, Data Structures & Algorithms, Software Engineering Foundations",
         "CGPA : 4.0 ",
       ],
       website_link: "http://www.ssgec.ac.in/",
@@ -385,7 +388,7 @@ const projectsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "profile.png",
+    profile_image_path: "Cropped_Image.png",
     description:
       "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
   },
@@ -516,7 +519,7 @@ const projects = {
       ],
       links: [
         {
-          name: "Live Demo",
+          name: "IEEE Publication",
           url: " https://ieeexplore.ieee.org/document/8933175 ",
           iconifyClass: "mdi:web",
         },

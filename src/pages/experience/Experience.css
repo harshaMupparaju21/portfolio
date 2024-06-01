@@ -49,9 +49,7 @@
 .experience-header-detail-text {
   font-size: 20px;
   line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 5%;
   font-family: "Google Sans Medium";
 }
 
@@ -92,7 +90,8 @@
 
   .experience-header-detail-text {
     font-size: 16px;
-    margin-right: 0px;
+    margin: 0 10%;
+
     line-height: normal;
     text-align: center;
   }

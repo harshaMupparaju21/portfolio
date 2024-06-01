@@ -75,7 +75,8 @@
     text-align: center;
   }
   .skills-image-div {
-    order: 2;
+    /* order: 2; */
+    display: none;
   }
   .skills-image-div > * {
     margin-top: 0px;
