@@ -15,7 +15,7 @@ const greeting = {
   // nickname: "harsha",
   full_name: "Harsha Mupparaju",
   subTitle: "Full stack developer, Java and Javascript enthusiast",
-  resumeLink: "https://harsha-resume-ftm.tiiny.site/",
+  resumeLink: "./assets/resume.pdf",
   mail: "mailto:hmuppara@asu.edu",
 };
 
@@ -260,7 +260,7 @@ const degrees = {
       alt_name: "Arizona State University, Tempe, AZ",
       duration: "Aug 2022 - May 2024",
       descriptions: [
-        " CSE 546: Clous Computing",
+        " CSE 546: Cloud Computing",
         "SER 501: Advanced Data Structures and Algorithms",
         "SER 515: Foundations of Software Engineering",
         "SER 531: Semantic Web Engineering",

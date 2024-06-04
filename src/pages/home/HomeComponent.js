@@ -23,6 +23,7 @@ import { style } from "glamor";
 import ProjectsImg from "../projects/ProjectsImg";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "../projects/Projects.css";
+import resume from "../../assests/resume.pdf";
 
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
@@ -139,7 +140,7 @@ function Home(props) {
       <div className="basic-contact" id="contact">
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-heading-div">
-            {/* <div className="contact-heading-img-div">
+            <div className="contact-heading-img-div">
               <img
                 className="profile-pic"
                 src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
@@ -148,7 +149,7 @@ function Home(props) {
                   border: "none",
                 }}
               />
-            </div> */}
+            </div>
             <div className="contact-heading-text-div">
               <h1
                 className="contact-heading-text"
@@ -165,7 +166,12 @@ function Home(props) {
               <SocialMedia />
               <br />
               <br />
-              <a {...styles} className="general-btn" href={greeting.resumeLink}>
+              <a
+                {...styles}
+                className="general-btn"
+                download="HarshaVardhan_Mupparaju_Resume"
+                href={resume}
+              >
                 See my Resume
               </a>
             </div>

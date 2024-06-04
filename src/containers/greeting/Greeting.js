@@ -49,8 +49,8 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* <FeelingProud theme={theme} /> */}
-            <div className="contact-heading-img-div">
+            <FeelingProud theme={theme} />
+            {/* <div className="contact-heading-img-div">
               <img
                 className="profile-pic"
                 src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
@@ -59,7 +59,7 @@ export default function Greeting(props) {
                   border: "none",
                 }}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
