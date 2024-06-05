@@ -41,6 +41,10 @@
   float: right;
 }
 
+.additional-info {
+  float: right;
+  margin: 0.5rem;
+}
 .body-content {
   max-width: inherit;
   border-radius: 0px 0px 7px 7px;

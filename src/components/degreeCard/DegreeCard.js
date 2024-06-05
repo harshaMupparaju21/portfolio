@@ -100,6 +100,13 @@ function DegreeCard(props) {
               <h3 className="duration" style={{ color: "#FFFFFF" }}>
                 {degree.duration}
               </h3>
+              {degree.additionalInfo ? (
+                <p className="additional-info card-subtitle">
+                  {degree.additionalInfo}
+                </p>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
           <div className="body-content">

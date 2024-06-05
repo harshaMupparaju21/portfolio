@@ -259,6 +259,7 @@ const degrees = {
       logo_path: "seal.png",
       alt_name: "Arizona State University, Tempe, AZ",
       duration: "Aug 2022 - May 2024",
+      additionalInfo: "CGPA: 4.0",
       descriptions: [
         " CSE 546: Cloud Computing",
         "SER 501: Advanced Data Structures and Algorithms",
@@ -270,7 +271,6 @@ const degrees = {
         "CSE 565: Software Verification, Validation and Testing",
         "SER 594: Game Programming and Design",
         // " Cloud Computing, Mobile Systems, Data Structures & Algorithms, Software Engineering Foundations",
-        "CGPA : 4.0 ",
       ],
       website_link: "http://www.ssgec.ac.in/",
     },
