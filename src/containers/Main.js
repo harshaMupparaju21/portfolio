@@ -1,60 +1,51 @@
-import React,{useState, useEffect} from "react";
-import { Route, Switch, HashRouter } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import { settings } from "../portfolio.js";
 
 export default function Main(propss) {
-  const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
-  useState(true);
+  const [isShowingSplashAnimation, setIsShowingSplashAnimation] = useState(
+    true
+  );
 
-useEffect(() => {
-  if (settings.isSplash) {
-    const splashTimer = setTimeout(
-      () => setIsShowingSplashAnimation(false),
-     settings.splashDuration
-    );
-    return () => {
-      clearTimeout(splashTimer);
-    };
-  }
-}, []);
+  useEffect(() => {
+    if (settings.isSplash) {
+      const splashTimer = setTimeout(
+        () => setIsShowingSplashAnimation(false),
+        settings.splashDuration
+      );
+      return () => {
+        clearTimeout(splashTimer);
+      };
+    }
+  }, []);
   if (settings.isSplash) {
     return (
       <div>
-      {isShowingSplashAnimation ? (
-        <Splash
-                  {...propss}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
+        {isShowingSplashAnimation ? (
+          <Splash {...propss} theme={propss.theme} setTheme={propss.setTheme} />
         ) : (
-          <Home
-         {...propss}
-         theme={propss.theme}
-         setTheme={propss.setTheme}
-       />
-        )
-        }
+          <Home {...propss} theme={propss.theme} setTheme={propss.setTheme} />
+        )}
       </div>
     );
   }
 
-//   <HashRouter basename="/">
-//   <Switch>
-//     <Route
-//      path="/"
-//      exact
-//      render={(props) => (
-//        <Home
-//          {...props}
-//          theme={propss.theme}
-//          setTheme={propss.setTheme}
-//        />
-//      )}
-//    />
-// </Switch>
-// </HashRouter>
+  //   <HashRouter basename="/">
+  //   <Switch>
+  //     <Route
+  //      path="/"
+  //      exact
+  //      render={(props) => (
+  //        <Home
+  //          {...props}
+  //          theme={propss.theme}
+  //          setTheme={propss.setTheme}
+  //        />
+  //      )}
+  //    />
+  // </Switch>
+  // </HashRouter>
   //  else {
   //   return (
   //     <div>

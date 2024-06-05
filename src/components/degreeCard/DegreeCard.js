@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./DegreeCard.css";
 import { Fade, Flip } from "react-reveal";
 import { style } from "glamor";
@@ -6,6 +6,8 @@ import { style } from "glamor";
 function DegreeCard(props) {
   const degree = props.degree;
   const theme = props.theme;
+
+  const [showContent, setShowContent] = useState(false);
 
   const style_img = style({
     width: "220px",
@@ -44,6 +46,10 @@ function DegreeCard(props) {
     //   width: "100%",
     // },
   });
+
+  const expandContent = () => {
+    setShowContent((prev) => !prev);
+  };
 
   // const button_visit = style({
   //   textDecoration: "none",
@@ -87,6 +93,7 @@ function DegreeCard(props) {
           <div
             className="body-header"
             style={{ backgroundColor: theme.accentColor }}
+            onClick={expandContent}
           >
             <div className="body-header-title">
               <h2 className="card-title" style={{ color: "#FFFFFF" }}>
@@ -109,7 +116,7 @@ function DegreeCard(props) {
               )}
             </div>
           </div>
-          <div className="body-content">
+          <div className={`body-content ${showContent ? "show" : "hide"}`}>
             {degree.descriptions.map((sentence) => {
               return (
                 <p className="content-list" style={{ color: theme.text }}>

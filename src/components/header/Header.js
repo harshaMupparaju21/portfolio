@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { Fade } from "react-reveal";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
@@ -94,8 +94,8 @@ function Header(props) {
                 className="ec"
                 href="#education"
                 isActive={() => {
-    return window.location.hash === '#education';
-  }}
+                  return window.location.hash === "#education";
+                }}
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
@@ -107,16 +107,15 @@ function Header(props) {
               <a
                 className="xp"
                 href="#experience"
-  //               isActive={() => {
-  //   return window.location.hash === '#experience';
-  // }}
+                //               isActive={() => {
+                //   return window.location.hash === '#experience';
+                // }}
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
                 Experience
               </a>
-              
             </li>
             <li>
               <a

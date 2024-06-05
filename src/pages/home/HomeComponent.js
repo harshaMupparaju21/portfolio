@@ -12,7 +12,6 @@ import "../education/EducationComponent.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import "../contact/ContactComponent.css";
 import {
-  greeting,
   contactPageData,
   projectsHeader,
   projects,
@@ -26,7 +25,6 @@ import "../projects/Projects.css";
 import resume from "../../assests/resume.pdf";
 
 const ContactData = contactPageData.contactSection;
-const blogSection = contactPageData.blogSection;
 
 function Home(props) {
   const theme = props.theme;

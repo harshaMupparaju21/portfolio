@@ -1,6 +1,7 @@
 .degree-card {
   display: flex;
   width: 100%;
+  margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -24,6 +25,7 @@
   display: flex;
   border-radius: 7px 7px 0px 0px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .body-header-title {
@@ -49,10 +51,23 @@
   max-width: inherit;
   border-radius: 0px 0px 7px 7px;
   padding: 5px;
+  /* height: 0; */
+  /* display: none; */
   justify-content: center;
   align-items: center;
+  visibility: none;
+  transition: visibility 1s linear;
 }
 
+.show {
+  display: block;
+  height: auto;
+}
+
+.hide {
+  display: none;
+  height: 0;
+}
 .content-list {
   padding-left: 10px;
   padding-right: 10px;
